@@ -1,0 +1,322 @@
+.consult
+    background: url('../img/consult.jpg') center no-repeat
+    position: relative
+    padding-top: 80px
+    padding-bottom: 90px
+    &::after
+        content: ""
+        display: block
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        background: linear-gradient(0deg, rgba(17, 10, 31, 0.7), rgba(17, 10, 31, 0.7))
+    &__title
+        font-weight: 800
+        font-size: 44px
+        line-height: 54px
+        margin-top: 0
+        margin-bottom: 20px
+        text-align: center
+        color: #FFFFFF
+        position: relative
+        z-index: 2
+    &__subtitle
+        font-size: 30px
+        line-height: 37px
+        text-align: center
+        color: #FFFFFF
+        margin-bottom: 60px
+        position: relative
+        z-index: 2
+    &__form
+        position: relative
+        z-index: 2
+        width: 1060px
+        margin: 0 auto
+        display: flex
+        align-items: center
+        justify-content: space-between
+        input
+            width: 385px
+            height: 57px
+            background: #FFFFFF
+            border-radius: 5px
+            border: 0
+            padding: 0 20px
+            font-family: 'Montserrat'
+            font-weight: 400
+            font-size: 14px
+            line-height: 17px
+            color: #383838
+            &:focus
+                outline: none
+        button
+            width: 250px
+            height: 57px
+            background: #FFC633
+            border-radius: 5px
+            border: 0
+            font-family: 'Montserrat'
+            font-weight: 700
+            font-size: 18px
+            line-height: 22px
+            color: #24173D
+            text-transform: uppercase
+            &:hover
+                background-color: darken(#FFC633,20)
+                color: #fff
+.info
+    padding: 110px 0
+    overflow: hidden
+    position: relative
+    &__wrap
+        display: flex
+        justify-content: space-between
+    &__title
+        font-weight: 900
+        font-size: 44px
+        line-height: 77px
+        text-transform: uppercase
+        color: #24173D
+        margin: 0
+        padding-left: 19px
+        width: 48%
+        border-left: 5px solid #24173D
+    &__main
+        background: #FFC633
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 30px 0px 0px 30px
+        width: 50vw
+        position: absolute
+        top: 110px
+        right: 0
+        display: flex
+        padding: 50px
+        justify-content: space-between
+    &__block
+        width: 205px
+        font-weight: 600
+        font-size: 18px
+        line-height: 22px
+        text-align: center
+        text-transform: uppercase
+        color: #FFFFFF
+        span
+            font-weight: 800
+            font-size: 70px
+            line-height: 85px
+            color: #24173D
+            border-top: 2px solid #FFFFFF
+            border-bottom: 2px solid #FFFFFF
+            margin: 20px 0
+            display: block
+            small
+                font-size: 30px
+                line-height: 37px
+.cat
+    &__title
+        font-weight: 700
+        font-size: 44px
+        line-height: 60px
+        text-align: center
+        color: #24173D
+        margin: 0
+        margin-bottom: 60px
+    &__wrap
+        display: grid
+        grid-template-columns: repeat(6, 1fr)
+    &__block
+        height: 416px
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        align-items: center
+        text-decoration: none
+        &::after
+            content: ""
+            display: block
+            width: 100%
+            height: 100%
+            position: absolute
+            top: 0
+            left: 0
+            background: linear-gradient(180deg, rgba(17, 10, 33, 0) 0%, rgba(20, 12, 38, 0.75) 100%)
+        &:nth-child(1)
+            grid-column: 1/3
+        &:nth-child(2)
+            grid-column: 3/5
+        &:nth-child(3)
+            grid-column: 5/7
+        &:nth-child(4)
+            grid-column: 1/4
+        &:nth-child(5)
+            grid-column: 4/7
+    &__name
+        font-weight: 600
+        font-size: 24px
+        line-height: 29px
+        text-align: center
+        letter-spacing: 0.05em
+        color: #FFFFFF
+        margin-bottom: 20px
+        position: relative
+        z-index: 2
+    &__link
+        margin-bottom: 30px
+        background: #FAC86E
+        box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2)
+        border-radius: 30px
+        padding: 13px 50px
+        font-family: 'Montserrat'
+        font-weight: 600
+        font-size: 16px
+        line-height: 20px
+        color: #24173D
+        position: relative
+        z-index: 2
+        &:hover
+            background: darken(#FAC86E, 20)
+.features
+    padding: 42px 0
+    &__wrap
+        border: thick double #030303
+        border-radius: 20px
+        padding: 75px 65px
+        padding-bottom: 90px
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 90px 20px
+    &__block
+        display: flex
+        align-items: center
+        grid-gap: 40px
+    &__img
+        width: 80px
+    &__text
+        font-weight: 300
+        font-size: 24px
+        line-height: 29px
+        letter-spacing: 0.05em
+        color: #24173D
+    &__title
+        font-weight: 700
+        font-size: 44px
+        line-height: 60px
+        width: 570px
+        margin: 0 auto
+        margin-bottom: -20px
+        background-color: #fff
+        position: relative
+        z-index: 2
+        text-align: center
+        color: #24173D
+.main
+    padding-top: 110px
+    padding-bottom: 200px
+    background: url('../img/main.jpg') center no-repeat
+    background-size: cover
+    &__wrap
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 80px
+    &__title
+        font-weight: 800
+        font-size: 67px
+        line-height: 70px
+        text-transform: uppercase
+        color: #FFFFFF
+        margin: 0
+    &__descr
+        font-weight: 300
+        font-size: 29px
+        line-height: 70px
+        text-transform: uppercase
+        color: #FFFFFF
+        margin-bottom: 30px
+        padding-bottom: 30px
+        position: relative
+        &::after
+            content: ""
+            border-radius: 50%
+            width: 460px
+            height: 3px
+            background-color: #fff
+            position: absolute
+            bottom: 0
+            left: 96px
+    &__subtitle
+        font-weight: 700
+        font-size: 56px
+        line-height: 60px
+        margin-bottom: 30px
+        color: #FFFFFF
+    &__text
+        font-weight: 400
+        font-size: 24px
+        line-height: 33px
+        color: #FFFFFF
+    &__form
+        padding: 50px
+        background: #FFC633
+        box-shadow: 10px 25px 45px rgba(0, 0, 0, 0.15)
+        backdrop-filter: blur(10px)
+        border-radius: 30px
+        &-title
+            font-weight: 400
+            font-size: 29px
+            line-height: 42px
+            text-align: center
+            letter-spacing: 0.015em
+            text-transform: uppercase
+            color: #24173D
+            margin-bottom: 10px
+            span
+                display: block
+                font-weight: 800
+                font-size: 87px
+                line-height: 106px
+                letter-spacing: 0px
+        &-subtitle
+            font-weight: 600
+            font-size: 20px
+            line-height: 24px
+            text-align: center
+            letter-spacing: 0.1em
+            text-transform: uppercase
+            color: #FFFFFF
+            margin-bottom: 30px
+        &-wrap
+            display: flex
+            align-items: center
+            margin-bottom: 40px
+            justify-content: space-between
+            input
+                background: #FFFFFF
+                border-radius: 5px
+                border: 0
+                padding: 0 20px
+                height: 64px
+                width: 48%
+                font-family: 'Montserrat'
+                font-weight: 275
+                font-size: 19px
+                line-height: 23px
+                &:focus
+                    outline: none
+        button
+            background: #24173D
+            box-shadow: 4px 4px 8px rgba(23, 55, 95, 0.2)
+            border-radius: 43px
+            padding: 10px 20px
+            border: 0
+            font-family: 'Montserrat'
+            font-weight: 600
+            font-size: 18px
+            line-height: 22px
+            text-transform: uppercase
+            color: #FFFFFF
+            margin: 0 auto
+            display: inherit

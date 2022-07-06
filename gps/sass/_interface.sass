@@ -1,0 +1,77 @@
+.container
+ width: 90%
+ margin: auto
+@media (max-width: 1099px)
+ .container
+  width: 980px
+  margin: auto
+@media (max-width: 991px)
+ .container
+  width: 740px
+  margin: auto
+@media (max-width: 767px)
+ .container
+  width: 550px
+  margin: auto
+@media (max-width: 575px)
+ .container
+  width: 100%
+  padding-left: 15px
+  padding-right: 15px
+  margin: auto
+.footer
+ padding-top: 50px
+ padding-bottom: 15px
+ &__logo
+  display: block
+  margin-bottom: 55px
+  text-align: center
+ &__copy
+  width: 480px
+  text-align: center
+  margin: 0 auto
+  font-style: normal
+  font-weight: 400
+  font-size: 14px
+  line-height: 17px
+  text-align: center
+  color: #4A4A4A
+  a
+   color: #F8B500
+   text-decoration: none
+.header
+ padding-top: 15px
+ padding-bottom: 20px
+ &__logo
+  display: flex
+ &__wrap
+  display: flex
+  align-items: center
+  padding-left: 20%
+  justify-content: space-between
+ &__phone
+  display: flex
+  align-items: center
+  grid-gap: 20px
+  font-weight: 600
+  font-size: 24px
+  line-height: 29px
+  color: #24173D
+  text-decoration: none
+ &__right
+  display: flex
+  align-items: center
+  grid-gap: 40px
+ &__btn
+  text-decoration: none
+  background: #FFC633
+  border-radius: 30px
+  padding: 25px 15px
+  font-weight: 700
+  font-size: 18px
+  line-height: 25px
+  text-align: center
+  color: #000000
+  &:hover
+   background: darken(#FFC633, 20)
+   color: #fff
